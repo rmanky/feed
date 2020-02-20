@@ -1,0 +1,36 @@
+#placePicture {
+    float: left;
+    width: 50%;
+    border-radius: 2em;
+}
+
+#title {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3em;
+    margin: 0.25em;
+}
+
+#leftButton {
+    float: left;
+    width: 25%;
+    height: 5em;
+}
+
+#rightButton {
+    float: right;
+    width: 25%;
+    height: 5em;
+}
+
+#like {
+    float: right;
+    width: 50%;
+    height: 5em;
+}
+
+#dislike {
+    float: right;
+    width: 50%;
+    height: 5em;
+}
