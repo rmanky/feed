@@ -42,11 +42,14 @@ function continueSearch(position) {
                 
                 placeDetails.getDetails(detailsRequest, (placeDetailed, statusDetailed) => {
                     if(statusDetailed === google.maps.places.PlacesServiceStatus.OK) {
-                        console.log(placeDetailed.photos[0]);
                         placeDetailed.photos.forEach((photo, i) => {
                             if(i < 5) {
                                 var photoUrl = photo.getUrl({maxWidth: 500, maxHeight: 500});
                                 placePhotos.push(photoUrl);
+                            }
+                            if(iter == 0 && i == 1) {
+                                console.log("Updating...")
+                                updateImage();
                             }
                         });
                     }
@@ -69,7 +72,7 @@ function leftImage() {
 }
 
 function rightImage() {
-    currentImage = mod(currentImage - 1, 5);
+    currentImage = mod(currentImage + 1, 5);
     updateImage();
 }
 

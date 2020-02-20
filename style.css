@@ -1,36 +1,18 @@
-#placePicture {
-    float: left;
-    width: 50%;
-    border-radius: 2em;
+#placeContainer {
+    margin: 0 auto;
 }
 
-#title {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 3em;
-    margin: 0.25em;
+#placePicture {
+    width: 50vw;
+    height: 50vh;
+    border-radius: 2em;
+    object-fit: cover;
 }
 
 #leftButton {
-    float: left;
-    width: 25%;
-    height: 5em;
+    font-size: 3em;
 }
 
 #rightButton {
-    float: right;
-    width: 25%;
-    height: 5em;
-}
-
-#like {
-    float: right;
-    width: 50%;
-    height: 5em;
-}
-
-#dislike {
-    float: right;
-    width: 50%;
-    height: 5em;
+    font-size: 3em;
 }
